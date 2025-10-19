@@ -70,20 +70,23 @@
 
   <body>
     <h1>My Site</h1>
-    <p>Мой брат красавчик 😎</p>
 
     <ul>
       <li><a href="https://github.com/Taisiya29" target="_blank">Мой GitHub</a></li>
       <li><a href="https://www.google.com/" target="_blank">Открыть Google</a></li>
-      <li><a href="https://vk.com/t.ekova?from=search" target="_blank">Открыть ВК</a></li>
       <li><a href="https://www.shutterstock.com/ru/search/смешные-коты?dd_referrer=https%3A%2F%2Fyandex.ru%2F" target="_blank">Смешные коты 😺</a></li>
     </ul>
 
     <button onclick="toggleTheme()">Переключить цвет</button>
+    <button onclick="openSecret()">Секрет 🔒</button>
 
     <script>
       function toggleTheme() {
         document.body.classList.toggle('dark-mode');
+      }
+
+      function openSecret() {
+        window.open("https://example.com", "_blank"); // сюда вставь свою секретную ссылку
       }
     </script>
   </body>
